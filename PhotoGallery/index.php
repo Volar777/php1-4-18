@@ -15,7 +15,7 @@ $path = __DIR__ . '/foto';
 <body>
 
 <?php
-if(incomingFile($path) !== true and isset($_FILES['img'])){
+if(incomingFile($path) !== true && isset($_FILES['img'])){
     ?>
 <p>Не тот тип файла</p>
 <?php }

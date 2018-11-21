@@ -11,7 +11,7 @@ function myFilels ($path)
     $images = [];
     foreach ($nameFilse as $name) {
         $parsName = pathinfo($name);
-        if ('jpg' == $parsName['extension'] or 'png' == $parsName['extension']) {
+        if ('jpg' == $parsName['extension'] || 'png' == $parsName['extension']) {
             $images[] = $name;
         }
     }
