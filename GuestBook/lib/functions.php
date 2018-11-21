@@ -6,7 +6,8 @@
  * @return array|bool
  */
 function getArrLines($path){
-    return file($path,FILE_IGNORE_NEW_LINES);
+    $str = file_get_contents($path);
+     return explode(PHP_EOL, $str);
 }
 
 /**
