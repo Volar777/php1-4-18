@@ -16,7 +16,7 @@ function getArrLines(){
  */
 function saveNewLine($lastLine){
     $path = __DIR__ . '/../data/GuestBook.txt';
-    $arrLines = getArrLines($path);
+    $arrLines = getArrLines();
     $arrLines[] = $lastLine;
     $stringWithAllLines = implode(PHP_EOL,$arrLines);
     file_put_contents($path,$stringWithAllLines);
