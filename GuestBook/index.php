@@ -1,11 +1,11 @@
 <?php
 include __DIR__ . '/lib/functions.php';
-$path = __DIR__ . '/data/GuestBook.txt';
+
 if(isset($_POST['comment'])){
     $lastLine = trim($_POST['comment']);
-    saveNewLine($path,$lastLine);
+    saveNewLine($lastLine);
 }
-$arrLines = getArrLines($path);
+$arrLines = getArrLines();
 ?>
 <!doctype html>
 <html lang="RU">

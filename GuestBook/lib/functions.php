@@ -5,7 +5,8 @@
  * @param $path - путь до файла
  * @return array|bool
  */
-function getArrLines($path){
+function getArrLines(){
+    $path = __DIR__ . '/../data/GuestBook.txt';
     $str = file_get_contents($path);
      return explode(PHP_EOL, $str);
 }
@@ -15,7 +16,8 @@ function getArrLines($path){
  * @param $path - путь до файла
  * @param $lastLine - добавляемая строка
  */
-function saveNewLine($path,$lastLine){
+function saveNewLine($lastLine){
+    $path = __DIR__ . '/../data/GuestBook.txt';
     $arrLines = getArrLines($path);
     $arrLines[] = $lastLine;
     $stringWithAllLines = implode(PHP_EOL,$arrLines);
