@@ -2,7 +2,6 @@
 
 /**
  * Функция читать текстовый файл и возвращет массив строчек
- * @param $path - путь до файла
  * @return array|bool
  */
 function getArrLines(){
@@ -13,7 +12,6 @@ function getArrLines(){
 
 /**
  * Функция добавляет строчку в конец файла
- * @param $path - путь до файла
  * @param $lastLine - добавляемая строка
  */
 function saveNewLine($lastLine){
